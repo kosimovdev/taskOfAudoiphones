@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./**/*.{html,js}"],
   presets: [],
   darkMode: "media", // or 'class'
   theme: {
@@ -348,8 +348,7 @@ module.exports = {
         '"Courier New"',
         "monospace",
       ],
-      manrope : ['Manrope'],
-      
+      manrope: ["Manrope"],
     },
     fontSize: {
       xs: ["0.75rem", { lineHeight: "1rem" }],
@@ -1013,4 +1012,3 @@ module.exports = {
   },
   plugins: [],
 };
-

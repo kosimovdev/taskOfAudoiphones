@@ -5,23 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./dist/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../src/style.css" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="../src/style/main.css" />
+    <title>AUDIOPHONES</title>
   </head>
 
-  <body>
+  <body class="overflow-x-hidden">
+    <!-- header section -->
     <header class="fixed top-0 w-full backdrop-blur-3xl z-40">
-      <div class="container mx-auto border-b-2">
-        <nav class="nav flex justify-between h-[90px] items-center">
+      <div class="container mx-auto border-b-2 border-b-opacity-10">
+        <nav
+          class="nav flex justify-between h-[90px] items-center px-5 lg:px-0 border-b-2 border-opacity-10"
+        >
           <a href="index.html">
-            <img class="logo" src="./assets/icons/logo.svg" alt="logo" />
+            <img class="logo" src="./src/assets/icons/logo.svg" alt="logo" />
           </a>
           <ul
             class="list hidden md:flex justify-between text-white gap-x-[34px]"
@@ -40,28 +43,33 @@
             </li>
           </ul>
           <a class="link" href="#">
-            <img src="./assets/icons/cartIcon.svg" alt="cart" />
+            <img src="./src/assets/icons/cartIcon.svg" alt="cart" />
           </a>
         </nav>
       </div>
     </header>
-
-    <section id="intro" class="h-[729px] bg-[#141414] mb-[120px]">
-      <div class="container mx-auto">
-        <div class="wrapper flex items-center justify-between">
-          <div class="left-box w-[388px] text-white z-30">
-            <h6
+    <!-- intro section -->
+    <section
+      id="intro"
+      class="min-h-[729px] bg-[#131313] mb-[120px] overflow-hidden"
+    >
+      <div class="container mx-auto lg:px-5">
+        <div class="wrapper flex items-center justify-between relative">
+          <div
+            class="left-box w-[388px] mt-[24vh] lg:m-0 mx-auto text-center lg:text-left text-white z-30"
+          >
+            <p
               class="text-[14px] font-normal leading-[19px] opacity-50 tracking-[10px] mb-[24px]"
             >
               NEW PRODUCT
-            </h6>
+            </p>
             <h1
               class="font-bold text-[56px] leading-[58px] mb-[24px] tracking-[2px]"
             >
               XX99 MARK II HEADPHONES
             </h1>
             <p
-              class="font-meduim text-[15px] leading-[25px] opacity-75 mb-[40px]"
+              class="sm:text-center md:text-center font-meduim text-[15px] leading-[25px] opacity-75 mb-[40px]"
             >
               Experience natural, lifelike audio and exceptional build quality
               made for the passionate music enthusiast.
@@ -72,37 +80,35 @@
               See Product
             </button>
           </div>
-          <div class="right-box">
-            <picture class="sm:absolute md:relative sm:top-12 md:top-0">
-              <source
-                media="(max-width: 375px)"
-                srcset="./assets/images/tables-headphones.png"
-              />
-              <source
-                media="(max-width: 786px)"
-                srcset="./assets/images/tables-headphones.png"
-              />
-              <img
-                class="rounded-[50%]"
-                src="./assets/images/header-img.png"
-                alt="img"
-              />
-            </picture>
-          </div>
+          <picture
+            class="absolute sm:top-0 lg:relative scale-150 top-40 lg:top-0 sm:scale-100 lg:scale-100"
+          >
+            <source
+              media="(max-width: 1024px)"
+              srcset="./src/assets/images/tablet-headphones.png"
+            />
+            <source
+              media="(max-width: 375px)"
+              srcset="./src/assets/images/tablet-headphones.png"
+            />
+            <img src="./src/assets/images/header-img.png" alt="img" />
+          </picture>
         </div>
       </div>
     </section>
-
+    <!-- audiophones section -->
     <section class="audiophonesShop mb-[168px]">
       <div class="container mx-auto">
-        <div class="wrapper flex items-center justify-between">
+        <div
+          class="wrapper mt-24 px-[24px] md:px-0 flex flex-col items-center gap-y-[75px] sm:flex-row justify-between"
+        >
           <div
-            class="card-box flex flex-col w-[calc(33%-15px)] h-[204px] rounded-[8px] bg-silver-dark text-center gap-[30px]"
+            class="card-box flex flex-col md:px-0 w-full sm:w-[calc(33%-7.5px)] md:w-[calc(33%-15px)] h-[204px] rounded-[8px] bg-silver-dark text-center gap-[30px]"
           >
             <div class="img-box relative">
               <img
                 class="mt-[-80px] mx-auto w-[122px] h-[160px]"
-                src="./assets/images/boots-1.png"
+                src="./src/assets/images/boots-1.png"
                 alt="img"
               />
             </div>
@@ -116,17 +122,17 @@
                   href="#"
                   >Shop
                 </a>
-                <img src="./assets/icons/nextIcon.svg" alt="nexticon" />
+                <img src="./src/assets/icons/nextIcon.svg" alt="nexticon" />
               </div>
             </div>
           </div>
           <div
-            class="card-box flex flex-col w-[calc(33%-15px)] h-[204px] rounded-[8px] bg-silver-dark text-center gap-[30px]"
+            class="card-box flex flex-col md:px-0 w-full sm:w-[calc(33%-7.5px)] md:w-[calc(33%-15px)] h-[204px] rounded-[8px] bg-silver-dark text-center gap-[30px]"
           >
             <div class="img-box relative">
               <img
                 class="mt-[-66px] mx-auto w-[122px] h-[146px]"
-                src="./assets/images/speaker.png"
+                src="./src/assets/images/speaker.png"
                 alt="speaker"
               />
             </div>
@@ -140,17 +146,17 @@
                   href="#"
                   >Shop
                 </a>
-                <img src="./assets/icons/nextIcon.svg" alt="nexticon" />
+                <img src="./src/assets/icons/nextIcon.svg" alt="nexticon" />
               </div>
             </div>
           </div>
           <div
-            class="card-box flex flex-col w-[calc(33%-15px)] h-[204px] rounded-[8px] bg-silver-dark text-center gap-[30px]"
+            class="card-box flex flex-col md:px-0 w-full sm:w-[calc(33%-7.5px)] md:w-[calc(33%-15px)] h-[204px] rounded-[8px] bg-silver-dark text-center gap-[30px]"
           >
             <div class="img-box relative">
               <img
                 class="mt-[-46px] mx-auto w-[122px] h-[126px]"
-                src="./assets/images/earphones.png"
+                src="./src/assets/images/earphones.png"
                 alt="earphones"
               />
             </div>
@@ -164,86 +170,65 @@
                   href="#"
                   >Shop
                 </a>
-                <img src="./assets/icons/nextIcon.svg" alt="nexticon" />
+                <img src="./src/assets/icons/nextIcon.svg" alt="nexticon" />
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="speakers mb-[200px]">
+    <!-- speakers section -->
+    <!-- <section id="products">
       <div class="container mx-auto">
-        <div
-          class="wrapper-start flex items-center justify-around w-full h-[560px] bg-orange-dark mb-[48px] rounded-[8px]"
-        >
-          <div class="box-left w-[calc(45%-65px)]">
-            <img
-              class="w-[400px] mt-[146px] h-[413px]"
-              src="./assets/images/big-speaker.png"
-              alt="#"
-            />
-          </div>
-          <div class="box-right w-[calc(45%-65px)]">
-            <h1
-              class="font-bold text-[56px] leading-[58px] tracking-[2px] text-[#ffffff] mb-[24px]"
-            >
-              ZX9 <br />
-              SPEAKER
-            </h1>
-            <p
-              class="font-normal text-[15px] leading-[25px] tracking-[2px] text-[#ffffff] opacity-75 mb-[40px] w-[79%]"
-            >
-              Upgrade to premium speakers that are phenomenally built to deliver
-              truly remarkable sound.
-            </p>
-            <button
-              class="py-[15px] cursor-pointer px-[30px] bg-black text-white text-[13px] leading-[18px] tracking-[1px]"
-            >
-              See Product
-            </button>
-          </div>
+        <div class="speaker h-[560px] bg-orange-dark"></div>
+      </div>
+    </section> -->
+    <section class="speakers mb-[200px]">
+    <div class="container mx-auto">
+      <div
+        class="wrapper-start flex items-center justify-around w-full h-[560px] bg-orange-dark mb-[48px] rounded-[8px]">
+        <div class="box-left w-[calc(45%-65px)]">
+          <img class="w-[400px] mt-[146px] h-[413px]" src="./src/assets/images/big-speaker.png" alt="#" />
         </div>
-        <div
-          class="wrapper-center bg-silver-dark h-[320px] rounded-[8px] py-[100px] px-[95px] mb-[48px]"
-        >
-          <h1 class="text-[28px] leading-[38px] uppercase font-bold mb-[32px]">
-            ZX7 SPEAKER
+        <div class="box-right w-[calc(45%-65px)]">
+          <h1 class="font-bold text-[56px] leading-[58px] tracking-[2px] text-[#ffffff] mb-[24px]">
+            ZX9 <br />
+            SPEAKER
           </h1>
+          <p class="font-normal text-[15px] leading-[25px] tracking-[2px] text-[#ffffff] opacity-75 mb-[40px] w-[79%]">
+            Upgrade to premium speakers that are phenomenally built to deliver
+            truly remarkable sound.
+          </p>
           <button
-            class="py-[15px] px-[30px] border border-black cursor-pointer"
-          >
+            class="py-[15px] cursor-pointer px-[30px] bg-black text-white text-[13px] leading-[18px] tracking-[1px]">
             See Product
           </button>
         </div>
-        <div
-          class="wrapper-footer flex items-center justify-between gap-[15px]"
-        >
-          <div class="box-left w-[calc(50%-15px)] h-[320px]">
-            <img
-              class="w-full h-[320px]"
-              src="./assets/images/earphones-2.png"
-              alt="earphones"
-            />
-          </div>
-          <div
-            class="box-right w-[calc(50%-15px)] h-[320px] bg-silver-dark pt-[100px] pl-[85px]"
-          >
-            <h1
-              class="text-[28px] leading-[38px] uppercase font-bold mb-[32px]"
-            >
-              YX1 EARPHONES
-            </h1>
-            <button
-              class="py-[15px] px-[30px] border border-black cursor-pointer"
-            >
-              See Product
-            </button>
-          </div>
+      </div>
+      <div class="wrapper-center bg-silver-dark h-[320px] rounded-[8px] py-[100px] px-[95px] mb-[48px]">
+        <h1 class="text-[28px] leading-[38px] uppercase font-bold mb-[32px]">
+          ZX7 SPEAKER
+        </h1>
+        <button class="py-[15px] px-[30px] border border-black cursor-pointer">
+          See Product
+        </button>
+      </div>
+      <div class="wrapper-footer flex items-center justify-between gap-[15px]">
+        <div class="box-left w-[calc(50%-15px)] h-[320px]">
+          <img class="w-full h-[320px]" src="./src/assets/images/earphones-2.png" alt="earphones" />
+        </div>
+        <div class="box-right w-[calc(50%-15px)] h-[320px] bg-silver-dark pt-[100px] pl-[85px]">
+          <h1 class="text-[28px] leading-[38px] uppercase font-bold mb-[32px]">
+            YX1 EARPHONES
+          </h1>
+          <button class="py-[15px] px-[30px] border border-black cursor-pointer">
+            See Product
+          </button>
         </div>
       </div>
-    </section>
-
+    </div>
+  </section>
+    <!-- footer section -->
     <section class="footer-section mb-[200px]">
       <div class="container mx-auto">
         <div class="flex items-center justify-between gap-[15px]">
@@ -271,20 +256,20 @@
           <div class="box-right w-[calc(50%-50px)]">
             <img
               class="w-full h-[588px]"
-              src="./assets/images/man-boots.png"
+              src="./src/assets/images/man-boots.png"
               alt="man-boots"
             />
           </div>
         </div>
       </div>
     </section>
-
+    <!-- footer section -->
     <footer class="pb-[48px] bg-[#101010]">
       <div class="container mx-auto">
         <div class="linear w-[101px] border-t-4 border-orange-dark"></div>
         <div class="footer-box mt-[75px] flex justify-between">
           <div class="box-left">
-            <img src="./assets/icons/logo.svg" alt="logo" />
+            <img src="./src/assets/icons/logo.svg" alt="logo" />
             <h6
               class="text-[15px] leading-[25px] text-[#ffffff] opacity-50 mt-[36px] mb-[56px] w-[62%]"
             >
@@ -314,14 +299,14 @@
             </ul>
             <div class="socila-media flex items-center justify-end gap-[20px]">
               <a class="link" href="#">
-                <img src="./assets/icons/facebookIcon.svg" alt="facebook" />
+                <img src="./src/assets/icons/facebookIcon.svg" alt="facebook" />
               </a>
               <a class="link" href="#">
-                <img src="./assets/icons/twitter.svg" alt="twitter" />
+                <img src="./src/assets/icons/twitter.svg" alt="twitter" />
               </a>
               <a class="link" href="#">
                 <img
-                  src="./assets/icons/instagramIcon.svg"
+                  src="./src/assets/icons/instagramIcon.svg"
                   alt="instagramIcon"
                 />
               </a>
@@ -330,5 +315,6 @@
         </div>
       </div>
     </footer>
+    <!-- footer section end -->
   </body>
 </html>
